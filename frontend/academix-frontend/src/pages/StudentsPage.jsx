@@ -10,8 +10,8 @@ function StudentsPage(){
         .catch((error)=>{console.error("Error fetching students:",error)});
     },[])
     return(
-        <div>
-        <h1>Students</h1>
+        <div style={{display:"flex",alignItems: "center",marginTop:"50px",flexDirection: "column"}}>
+            <h1 style={{ textAlign: "center",marginBottom:"20px"}}>Students</h1>
             <table
             border="2"
             cellPadding="10"
