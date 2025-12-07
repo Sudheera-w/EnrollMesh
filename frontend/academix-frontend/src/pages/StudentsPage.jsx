@@ -52,8 +52,20 @@ function StudentsPage(){
                         <td>{student.department}</td>
                         <td>{student.year}</td>
                         <td>
-                            <button
+                            <button 
+                                style={{
+                                    padding: "5px 16px",
+                                    fontSize: "14px",
+                                    fontWeight: "bold",
+                                    borderRadius: "4px",
+                                    background: "#1bec8a",
+                                    color: "black",
+                                    cursor: "pointer",
+                                    transition: "background 0.3s",
+                                }}
                                 onClick={()=>navigate(`/edit-student/${student.id}`)}
+                                onMouseEnter={(e) => e.target.style.background = "#00ca6b"}
+                                onMouseLeave={(e) => e.target.style.background = "#1beb89"}
                             >Edit</button>
                         </td>
                     </tr>
