@@ -25,14 +25,50 @@ function StudentsPage(){
     return(
         <div style={{
             display:"flex",
-            alignItems: "center", 
+            alignItems: "center",
             flexDirection: "column", 
             paddingTop: "50px", 
             width: "100%",
             boxSizing: "border-box",
             margin: 0
         }}>
-            <h1 style={{ textAlign: "center", marginBottom:"20px", width: "100%", marginTop: "10px"}}>Students</h1>
+            <div style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                width: "90%",
+                maxWidth: "900px",
+                marginBottom: "20px",
+                marginTop: "10px"
+            }}>
+            <h1 style={{ textAlign: "left", marginBottom:"20px", width: "100%", marginTop: "10px"}}>Students</h1>
+            <button
+                style={{
+                    whiteSpace: "nowrap",
+                    padding: "10px 24px",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    borderRadius: "6px",
+                    background: "#2852bc",
+                    color: "white",
+                    border: "none",
+                    cursor: "pointer",
+                    transition: "all 0.3s",
+                    boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+                }}
+                onClick={() => navigate("/Students/add")}
+                onMouseEnter={(e) => {
+                    e.target.style.background = "#1d3d8f";
+                    e.target.style.transform = "translateY(-2px)";
+                }}
+                onMouseLeave={(e) => {
+                    e.target.style.background = "#2852bc";
+                    e.target.style.transform = "translateY(0)";
+                }}
+            >
+                + Add Student
+            </button>
+            </div>
             <table
             border="2"
             cellPadding="10"
