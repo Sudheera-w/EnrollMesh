@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,4 +21,8 @@ public class Module {
     private String code;
     private int credits;
     private String department;
+
+    @ManyToMany(mappedBy = "modules")
+    private List<Student> students;
+
 }
