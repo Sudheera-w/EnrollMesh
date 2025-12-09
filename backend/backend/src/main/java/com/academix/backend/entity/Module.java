@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "courses")
-public class Course {
+@Table(name = "modules")
+public class Module {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
