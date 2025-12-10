@@ -82,6 +82,22 @@ function NavBar(){
                 >
                     Students
                 </Link>
+                <Link
+                    to="/modules"
+                    style={location.pathname === "/modules" ? activeLinkStyle : linkStyle}
+                    onMouseEnter={(e) => {
+                        if(location.pathname !== "/modules") {
+                            e.target.style.background = "#f0f0f0";
+                        }
+                    }}
+                    onMouseLeave={(e) => {
+                        if(location.pathname !== "/modules") {
+                            e.target.style.background = "transparent";
+                        }
+                    }}
+                >
+                    Modules
+                </Link>
             </div>
         </nav>
     )
