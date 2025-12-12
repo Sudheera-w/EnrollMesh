@@ -22,6 +22,10 @@ function HomePage() {
                 alignItems: 'center'
             }}>
                 <h1 style={{ margin: 0, fontSize: '24px', color: '#0056b3' }}>AcademiX</h1>
+                <nav>
+                    <Link to="/login" style={{ textDecoration: 'none', color: '#0056b3', margin: '0 10px' }}>Login</Link>
+                    <Link to="/register" style={{ textDecoration: 'none', color: '#fff', backgroundColor: '#0056b3', padding: '10px 15px', borderRadius: '5px' }}>Sign Up</Link>
+                </nav>
             </header>
 
             <main style={{
@@ -34,10 +38,10 @@ function HomePage() {
                 padding: '40px 20px'
             }}>
                 <h2 style={{ fontSize: '48px', color: '#333', marginBottom: '20px' }}>
-                    Streamline Your Student Management
+                    Effortless Management, Seamless Learning
                 </h2>
                 <p style={{ fontSize: '20px', maxWidth: '700px', marginBottom: '40px', color: '#555' }}>
-                    AcademiX provides a simple, intuitive, and powerful way to manage student information, courses, and enrollments, all in one place.
+                    Welcome to AcademiX, the all-in-one platform designed for both administrators and students. Manage with precision, learn with focus.
                 </p>
                 <Link to="/dashboard" style={{
                     textDecoration: 'none',
@@ -83,9 +87,18 @@ function HomePage() {
                         backgroundColor: '#f9f9f9'
                     }}>
                         <h4 style={{ fontSize: '22px', color: '#0056b3' }}>Student: My Modules</h4>
-                        <p style={{ color: '#666' }}>Students can log in to a personalized dashboard to view the modules they are enrolled in.</p>
+                        <p style={{ color: '#666' }}>Students can log in to a personalized dashboard to view only the modules they are enrolled in.</p>
                     </div>
-
+                    <div style={{
+                        maxWidth: '300px',
+                        padding: '20px',
+                        boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+                        borderRadius: '8px',
+                        backgroundColor: '#f9f9f9'
+                    }}>
+                        <h4 style={{ fontSize: '22px', color: '#0056b3' }}>Role-Based Access</h4>
+                        <p style={{ color: '#666' }}>A secure system that adapts the interface, ensuring admins and students see exactly what they need.</p>
+                    </div>
                 </div>
             </section>
 
