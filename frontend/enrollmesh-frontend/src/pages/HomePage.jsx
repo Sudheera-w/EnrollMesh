@@ -26,7 +26,7 @@ function HomePage() {
                     Effortless Management, Seamless Learning
                 </h2>
                 <p style={{ fontSize: '20px', maxWidth: '700px', marginBottom: '40px', color: '#555' }}>
-                    Welcome to AcademiX, the all-in-one platform designed for both administrators and students. Manage with precision, learn with focus.
+                    Welcome to EnrollMesh, the all-in-one platform designed for both administrators and students. Manage with precision, learn with focus.
                 </p>
                 <Link to="/signup" style={{
                     textDecoration: 'none',
@@ -74,16 +74,6 @@ function HomePage() {
                         <h4 style={{ fontSize: '22px', color: '#0056b3' }}>Student: My Modules</h4>
                         <p style={{ color: '#666' }}>Students can log in to a personalized dashboard to view only the modules they are enrolled in.</p>
                     </div>
-                    <div style={{
-                        maxWidth: '300px',
-                        padding: '20px',
-                        boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-                        borderRadius: '8px',
-                        backgroundColor: '#f9f9f9'
-                    }}>
-                        <h4 style={{ fontSize: '22px', color: '#0056b3' }}>Role-Based Access</h4>
-                        <p style={{ color: '#666' }}>A secure system that adapts the interface, ensuring admins and students see exactly what they need.</p>
-                    </div>
                 </div>
             </section>
 
@@ -94,7 +84,7 @@ function HomePage() {
                 padding: '20px',
                 marginTop: 'auto'
             }}>
-                <p>&copy; {new Date().getFullYear()} AcademiX. All Rights Reserved.</p>
+                <p>&copy; {new Date().getFullYear()} EnrollMesh. All Rights Reserved.</p>
             </footer>
         </div>
     );

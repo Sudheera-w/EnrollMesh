@@ -56,7 +56,7 @@ function NavBar() {
                     textDecoration: "none",
                 }}
             >
-                Academix
+                EnrollMesh
             </Link>
             <div style={{ marginLeft: "auto", display: "flex", gap: "10px", alignItems: "center" }}>
                 {isAdmin && (
