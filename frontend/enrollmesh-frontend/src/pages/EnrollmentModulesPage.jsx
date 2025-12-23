@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import StudentService from "../services/StudentService";
+import StudentService from "../Services/StudentService";
 
 const ENROLL_URL =`${import.meta.env.VITE_API_URL}/api/enrollments`;
 

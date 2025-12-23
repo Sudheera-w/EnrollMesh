@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ModuleService from "../services/ModuleService.jsx";
+import ModuleService from "../Services/ModuleService.jsx";
 
 function AddModulePage() {
 

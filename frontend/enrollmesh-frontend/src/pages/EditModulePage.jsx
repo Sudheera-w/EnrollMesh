@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import ModuleService from "../services/ModuleService.jsx";
+import ModuleService from "../Services/ModuleService.jsx";
 
 function EditModulePage() {
 
